@@ -82,10 +82,10 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: minmax(0, 1fr) 330px;
   gap: 48px;
   align-items: center;
-  min-height: 620px;
+  min-height: 560px;
 }
 
 .eyebrow {
@@ -151,9 +151,10 @@ h2 {
 
 .phone-card {
   position: relative;
+  width: 330px;
   border: 1px solid var(--border);
-  border-radius: 42px;
-  padding: 22px;
+  border-radius: 34px;
+  padding: 18px;
   background:
     linear-gradient(155deg, rgba(255, 255, 255, 0.08), transparent),
     var(--card);
@@ -163,28 +164,29 @@ h2 {
 .phone-card::before {
   content: "";
   position: absolute;
-  inset: -18px;
+  inset: -14px;
   z-index: -1;
-  border-radius: 56px;
+  border-radius: 46px;
   background: rgba(30, 51, 46, 0.7);
 }
 
 .phone-top {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 
 .phone-top img {
-  width: 54px;
-  height: 54px;
+  width: 44px;
+  height: 44px;
   border-radius: 999px;
 }
 
 .phone-top p {
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   color: var(--gold);
+  font-size: 0.98rem;
   font-weight: 900;
 }
 
@@ -192,6 +194,10 @@ h2 {
 .glance-card p,
 .glance-grid span {
   color: var(--muted);
+}
+
+.phone-top span {
+  font-size: 0.9rem;
 }
 
 .glance-card,
@@ -204,79 +210,83 @@ h2 {
 }
 
 .glance-card {
-  border-radius: 30px;
-  padding: 20px;
-  margin-bottom: 14px;
+  border-radius: 24px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
 }
 
 .mini-label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--gold);
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .glance-card strong {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: var(--text);
-  font-size: 1.35rem;
+  font-size: 1.18rem;
   font-weight: 900;
+  line-height: 1.18;
 }
 
 .glance-card p {
   margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.35;
 }
 
 .glance-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 14px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .glance-grid div {
-  min-height: 128px;
-  border-radius: 26px;
-  padding: 16px;
+  min-height: auto;
+  border-radius: 22px;
+  padding: 14px;
 }
 
-.glance-grid span {
+.glance-grid span,
+.detail-label {
   display: block;
   margin-bottom: 8px;
-  color: var(--muted);
-  font-size: 0.8rem;
-  font-weight: 500;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 900;
 }
 
 .mini-detail-list {
   display: grid;
-  gap: 6px;
-  margin-top: 8px;
+  gap: 4px;
+  margin-top: 6px;
 }
 
-.mini-detail-list strong {
-  display: block;
+.mini-detail-list p {
   margin: 0;
-  color: var(--text);
-  font-size: 0.98rem;
-  font-weight: 900;
-  line-height: 1.25;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.24;
 }
 
 .idea-card {
   margin-bottom: 0;
-  padding: 18px 20px;
+  padding: 16px 18px;
 }
 
 .idea-card strong {
   display: block;
-  margin-top: 4px;
+  margin-top: 2px;
   margin-bottom: 6px;
   color: var(--text);
-  font-size: 1.22rem;
+  font-size: 1.08rem;
   font-weight: 900;
   line-height: 1.16;
 }
@@ -284,8 +294,8 @@ h2 {
 .idea-card p {
   margin-bottom: 0;
   color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.38;
+  font-size: 0.86rem;
+  line-height: 1.34;
 }
 
 .feature-band {
@@ -400,7 +410,8 @@ h2 {
   }
 
   .phone-card {
-    max-width: 390px;
+    width: min(330px, 100%);
+    max-width: 330px;
   }
 
   .support-grid {
