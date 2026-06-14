@@ -201,7 +201,7 @@ h2 {
 }
 
 .glance-card,
-.glance-grid div,
+.glance-grid > div,
 .quiet-panel,
 .document-card,
 .support-card {
@@ -247,7 +247,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.glance-grid div {
+.glance-grid > div {
   min-height: auto;
   border-radius: 22px;
   padding: 14px;
@@ -434,7 +434,7 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .glance-grid div {
+  .glance-grid > div {
     min-height: auto;
   }
 }
