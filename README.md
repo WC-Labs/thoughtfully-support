@@ -11,3 +11,5 @@ This repository contains the public support, privacy, and marketing pages for th
 ## About Thoughtfully
 
 Thoughtfully helps users remember birthdays and save the small details that make showing up for people easier.
+
+© WC Labs. All brand assets, names, and app content are owned by WC Labs.
