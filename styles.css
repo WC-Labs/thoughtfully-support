@@ -88,6 +88,7 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -100,6 +101,32 @@ a {
 
 .nav-links a:hover {
   color: var(--gold);
+}
+
+.beta-pill,
+.nav-links a.beta-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  border: 1px solid rgba(230, 193, 90, 0.42);
+  border-radius: 999px;
+  padding: 8px 13px;
+  color: var(--gold);
+  background: rgba(230, 193, 90, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.beta-pill:hover,
+.nav-links a.beta-pill:hover {
+  border-color: rgba(230, 193, 90, 0.72);
+  color: #151a18;
+  background: var(--gold);
 }
 
 .button {
