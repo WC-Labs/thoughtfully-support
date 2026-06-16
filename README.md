@@ -12,4 +12,6 @@ This repository contains the public support, privacy, and marketing pages for th
 
 Thoughtfully helps users remember birthdays and save the small details that make showing up for people easier.
 
+Support email: wclabs.apps@gmail.com
+
 © WC Labs. All brand assets, names, and app content are owned by WC Labs.
