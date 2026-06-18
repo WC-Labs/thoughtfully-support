@@ -136,13 +136,6 @@ a {
   background: var(--gold);
 }
 
-.beta-pill-secondary,
-.nav-links a.beta-pill-secondary {
-  border-color: rgba(247, 240, 223, 0.18);
-  color: var(--text);
-  background: rgba(247, 240, 223, 0.05);
-}
-
 .button {
   border-radius: 999px;
   padding: 14px 18px;
