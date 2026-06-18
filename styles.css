@@ -103,6 +103,13 @@ a {
   color: var(--gold);
 }
 
+.store-links {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .beta-pill,
 .nav-links a.beta-pill {
   display: inline-flex;
@@ -127,6 +134,13 @@ a {
   border-color: rgba(230, 193, 90, 0.72);
   color: #151a18;
   background: var(--gold);
+}
+
+.beta-pill-secondary,
+.nav-links a.beta-pill-secondary {
+  border-color: rgba(247, 240, 223, 0.18);
+  color: var(--text);
+  background: rgba(247, 240, 223, 0.05);
 }
 
 .button {
